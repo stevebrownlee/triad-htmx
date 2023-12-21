@@ -1,0 +1,182 @@
+[
+  {
+    "model": "triad.material",
+    "pk": 1,
+    "fields": {
+      "material": "Dragon Scale",
+      "potency": 9,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 2,
+    "fields": {
+      "material": "Starstone",
+      "potency": 8,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 3,
+    "fields": {
+      "material": "Abyssal Pearl",
+      "potency": 7,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 4,
+    "fields": {
+      "material": "Ember Core",
+      "potency": 6,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 5,
+    "fields": {
+      "material": "Quartz Crystal",
+      "potency": 5,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 6,
+    "fields": {
+      "material": "Tempest Shard",
+      "potency": 4,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 7,
+    "fields": {
+      "material": "Ancient Oakwood",
+      "potency": 3,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 8,
+    "fields": {
+      "material": "Frost Crystal",
+      "potency": 8,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 9,
+    "fields": {
+      "material": "Ethereal Essence",
+      "potency": 9,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 10,
+    "fields": {
+      "material": "Crimson Ruby",
+      "potency": 7,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 11,
+    "fields": {
+      "material": "Lunar Dust",
+      "potency": 6,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 12,
+    "fields": {
+      "material": "Stormheart Crystal",
+      "potency": 8,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 13,
+    "fields": {
+      "material": "Molten Core",
+      "potency": 9,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 14,
+    "fields": {
+      "material": "Aurora Silk",
+      "potency": 7,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 15,
+    "fields": {
+      "material": "Mystic Crystallite",
+      "potency": 5,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 16,
+    "fields": {
+      "material": "Vortex Opal",
+      "potency": 4,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 17,
+    "fields": {
+      "material": "Whisperwood Bark",
+      "potency": 3,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 18,
+    "fields": {
+      "material": "Celestial Diamond",
+      "potency": 9,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 19,
+    "fields": {
+      "material": "Spectral Ember",
+      "potency": 6,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.material",
+    "pk": 20,
+    "fields": {
+      "material": "Nebula Shard",
+      "potency": 8,
+      "type": 5
+    }
+  }
+]

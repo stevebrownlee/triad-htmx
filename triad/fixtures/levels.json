@@ -1,0 +1,66 @@
+[
+  {
+    "model": "triad.level",
+    "pk": 1,
+    "fields": {
+      "name": "Novice",
+      "number_of_wins": 0
+    }
+  },
+  {
+    "model": "triad.level",
+    "pk": 2,
+    "fields": {
+      "name": "Conjurer",
+      "number_of_wins": 5
+    }
+  },
+  {
+    "model": "triad.level",
+    "pk": 3,
+    "fields": {
+      "name": "Adept",
+      "number_of_wins": 10
+    }
+  },
+  {
+    "model": "triad.level",
+    "pk": 4,
+    "fields": {
+      "name": "Enchanter",
+      "number_of_wins": 15
+    }
+  },
+  {
+    "model": "triad.level",
+    "pk": 5,
+    "fields": {
+      "name": "Thaumaturgist",
+      "number_of_wins": 20
+    }
+  },
+  {
+    "model": "triad.level",
+    "pk": 6,
+    "fields": {
+      "name": "Sorcerer",
+      "number_of_wins": 25
+    }
+  },
+  {
+    "model": "triad.level",
+    "pk": 7,
+    "fields": {
+      "name": "Mage",
+      "number_of_wins": 30
+    }
+  },
+  {
+    "model": "triad.level",
+    "pk": 8,
+    "fields": {
+      "name": "Archmage",
+      "number_of_wins": 35
+    }
+  }
+]

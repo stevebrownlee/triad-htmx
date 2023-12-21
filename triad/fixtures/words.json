@@ -1,0 +1,182 @@
+[
+  {
+    "model": "triad.word",
+    "pk": 1,
+    "fields": {
+      "word": "Flamberglore",
+      "potency": 5,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 2,
+    "fields": {
+      "word": "Infernoquill",
+      "potency": 4,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 3,
+    "fields": {
+      "word": "Pyroflicker",
+      "potency": 3,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 4,
+    "fields": {
+      "word": "Aquamirage",
+      "potency": 5,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 5,
+    "fields": {
+      "word": "Ripplewhisper",
+      "potency": 4,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 6,
+    "fields": {
+      "word": "Auroradew",
+      "potency": 3,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 7,
+    "fields": {
+      "word": "Terraquiver",
+      "potency": 5,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 8,
+    "fields": {
+      "word": "Rootsoar",
+      "potency": 4,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 9,
+    "fields": {
+      "word": "Petalshimmer",
+      "potency": 3,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 10,
+    "fields": {
+      "word": "Zephyrwisp",
+      "potency": 5,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 11,
+    "fields": {
+      "word": "Whirlwindance",
+      "potency": 4,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 12,
+    "fields": {
+      "word": "Aeroglide",
+      "potency": 3,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 13,
+    "fields": {
+      "word": "Mysticflux",
+      "potency": 5,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 14,
+    "fields": {
+      "word": "Arcaneglitter",
+      "potency": 4,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 15,
+    "fields": {
+      "word": "Enigmatwist",
+      "potency": 3,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 16,
+    "fields": {
+      "word": "Luminastra",
+      "potency": 10,
+      "type_id": 1
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 17,
+    "fields": {
+      "word": "Aurorix",
+      "potency": 8,
+      "type_id": 2
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 18,
+    "fields": {
+      "word": "Mysticarum",
+      "potency": 15,
+      "type_id": 1
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 19,
+    "fields": {
+      "word": "Eclipsion",
+      "potency": 12,
+      "type_id": 3
+    }
+  },
+  {
+    "model": "triad.word",
+    "pk": 20,
+    "fields": {
+      "word": "Spectraglow",
+      "potency": 7,
+      "type_id": 2
+    }
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "model": "triad.ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "Tadpole",
+      "potency": 3,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 2,
+    "fields": {
+      "name": "Amethyst",
+      "potency": 8,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 3,
+    "fields": {
+      "name": "Campfire Ash",
+      "potency": 7,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 4,
+    "fields": {
+      "name": "Crow's Feather",
+      "potency": 4,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 5,
+    "fields": {
+      "name": "Essence of the Moon",
+      "potency": 9,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 6,
+    "fields": {
+      "name": "Spirit of Flowers",
+      "potency": 3,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 7,
+    "fields": {
+      "name": "Mercury",
+      "potency": 6,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 8,
+    "fields": {
+      "name": "Sparrow Entrails",
+      "potency": 5,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 9,
+    "fields": {
+      "name": "Ground Dragon Claw",
+      "potency": 10,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 10,
+    "fields": {
+      "name": "Firefly",
+      "potency": 2,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 11,
+    "fields": {
+      "name": "Bitter Root",
+      "potency": 4,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 12,
+    "fields": {
+      "name": "Quicksilver",
+      "potency": 7,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 13,
+    "fields": {
+      "name": "Gossamer Wing",
+      "potency": 4,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 14,
+    "fields": {
+      "name": "Crystalized Starlight",
+      "potency": 8,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 15,
+    "fields": {
+      "name": "Violet Petal",
+      "potency": 5,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 16,
+    "fields": {
+      "name": "Hydra Scale",
+      "potency": 9,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 17,
+    "fields": {
+      "name": "Whispering Fern",
+      "potency": 3,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 18,
+    "fields": {
+      "name": "Luminous Dewdrop",
+      "potency": 7,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 19,
+    "fields": {
+      "name": "Stormvine Leaf",
+      "potency": 6,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.ingredient",
+    "pk": 20,
+    "fields": {
+      "name": "Celestial Ember",
+      "potency": 10,
+      "type": 1
+    }
+  }
+]

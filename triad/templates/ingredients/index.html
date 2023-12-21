@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <!-- Ingredients Section Container -->
+  <div id="ingredients-container">
+    <!-- Navigation or Action Buttons -->
+    <div class="ingredients-actions">
+      <button hx-get="/ingredients" hx-target="#dynamic-content">View Ingredients</button>
+      <button hx-get="/ingredients/create" hx-target="#dynamic-content">Add New Item</button>
+    </div>
+
+    <!-- Dynamic Content Area -->
+    <!-- This is where the list, details, forms, etc., will be loaded -->
+
+    <div id="dynamic-content" hx-get="/ingredients" hx-trigger="load">
+      <!-- Content loaded via HTMX will appear here -->
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <!-- Any specific JavaScript needed for the ingredients section -->
+{% endblock %}

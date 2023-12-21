@@ -1,0 +1,11 @@
+<h1>Ingredients</h1>
+
+<a href="{% url 'triad:ingredient_form' %}">Add Ingredient</a>
+
+<ol class="ingredients">
+  {% for ingredient in ingredients %}
+    <li class="ingredient">
+      <a id="ingredient--{{ ingredient.id }}" class="ingredient__title" href="{% url 'triad:ingredient' ingredient.id %}">{{ ingredient.name }}</a>
+    </li>
+  {% endfor %}
+</ol>

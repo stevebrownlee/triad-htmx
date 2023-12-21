@@ -1,0 +1,202 @@
+[
+  {
+    "model": "triad.power",
+    "pk": 1,
+    "fields": {
+      "name": "Flame Burst",
+      "description": "Unleashes a burst of fiery energy.",
+      "attack_strength": 8,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 2,
+    "fields": {
+      "name": "Hydro Vortex",
+      "description": "Summons a powerful water vortex.",
+      "attack_strength": 7,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 3,
+    "fields": {
+      "name": "Tremor Quake",
+      "description": "Causes tremors and earthquakes.",
+      "attack_strength": 6,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 4,
+    "fields": {
+      "name": "Gust Whirlwind",
+      "description": "Summons a fierce whirlwind.",
+      "attack_strength": 7,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 5,
+    "fields": {
+      "name": "Mystical Summoning",
+      "description": "Summons mystical entities from other planes.",
+      "attack_strength": 9,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 6,
+    "fields": {
+      "name": "Inferno Beam",
+      "description": "Projects a focused beam of intense fire.",
+      "attack_strength": 8,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 7,
+    "fields": {
+      "name": "Aqua Blast",
+      "description": "Blasts targets with a forceful water attack.",
+      "attack_strength": 7,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 8,
+    "fields": {
+      "name": "Rockslide",
+      "description": "Causes a cascade of powerful rocks.",
+      "attack_strength": 6,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 9,
+    "fields": {
+      "name": "Air Slash",
+      "description": "Slices through with razor-sharp air currents.",
+      "attack_strength": 7,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 10,
+    "fields": {
+      "name": "Spiritual Channeling",
+      "description": "Channels mystical energies from spiritual realms.",
+      "attack_strength": 9,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 11,
+    "fields": {
+      "name": "Scorching Ember",
+      "description": "Engulfs targets in fiery embers.",
+      "attack_strength": 8,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 12,
+    "fields": {
+      "name": "Tidal Wave",
+      "description": "Summons a massive wave for an overwhelming attack.",
+      "attack_strength": 7,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 13,
+    "fields": {
+      "name": "Quicksand Trap",
+      "description": "Traps opponents in quicksand.",
+      "attack_strength": 6,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 14,
+    "fields": {
+      "name": "Cyclone Burst",
+      "description": "Creates a fierce cyclone to sweep away targets.",
+      "attack_strength": 7,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 15,
+    "fields": {
+      "name": "Ethereal Blast",
+      "description": "Unleashes a surge of otherworldly energies.",
+      "attack_strength": 9,
+      "type": 5
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 16,
+    "fields": {
+      "name": "Blazing Inferno",
+      "description": "Ignites everything in a blazing inferno.",
+      "attack_strength": 8,
+      "type": 1
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 17,
+    "fields": {
+      "name": "Frostbite",
+      "description": "Freezes targets with icy bites.",
+      "attack_strength": 7,
+      "type": 2
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 18,
+    "fields": {
+      "name": "Mudslide",
+      "description": "Creates a slide of thick, sticky mud.",
+      "attack_strength": 6,
+      "type": 3
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 19,
+    "fields": {
+      "name": "Whirlwind Slice",
+      "description": "Slices through with a razor-sharp whirlwind.",
+      "attack_strength": 7,
+      "type": 4
+    }
+  },
+  {
+    "model": "triad.power",
+    "pk": 20,
+    "fields": {
+      "name": "Spiritual Infusion",
+      "description": "Infuses targets with potent spiritual essence.",
+      "attack_strength": 9,
+      "type": 5
+    }
+  }
+]

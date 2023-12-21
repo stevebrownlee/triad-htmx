@@ -1,0 +1,18 @@
+<section id="ingredient-details">
+  <h1>{{ ingredient.name }}</h1>
+  <h2>Type: {{ ingredient.type.description }}</h2>
+  <h2>Potency: {{ ingredient.potency }}</h2>
+</section>
+
+<section id="ingredient-actions" style="display:flex;">
+  <form action="{% url 'triad:ingredient' ingredient.id %}" method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="actual_method" value="DELETE" />
+    <button>Delete</button>
+  </form>
+
+  <form action="{% url 'triad:ingredient' ingredient.id %}" method="GET">
+    {% csrf_token %}
+    <button>Edit</button>
+  </form>
+</section>
