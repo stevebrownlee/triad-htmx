@@ -20,8 +20,11 @@
       <h2 class="card-title">{{ ingredient.name }}</h2>
       <p>{{ ingredient.type.description }} type of potency {{ ingredient.potency }}</p>
       <div class="card-actions justify-end">
-        <button class="btn btn-primary">Delete</button>
-        <button class="btn btn-secondary">Edit</button>
+        <button hx-delete="/ingredients/{{ingredient.id}}" class="btn btn-primary">Delete</button>
+        <button hx-swap="innerHTML transition:true"
+              hx-target="#dynamic-content"
+              hx-get="/ingredients/{{ingredient.id}}/form"
+              class="btn btn-secondary">Edit</button>
       </div>
     </div>
   </div>

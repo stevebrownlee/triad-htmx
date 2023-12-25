@@ -1,6 +1,11 @@
 <div hx-ext="response-targets" class="flex justify-center w-1/2 mt-12">
     {% if ingredient.id is not None %}
-        <form class="w-full" hx-target="#dynamic-content" hx-put="{% url 'libraryapp:ingredient' ingredient.id %}" hx-target-400="#badrequest" hx-trigger="submit">
+        <form class="w-full"
+            hx-target="#dynamic-content"
+            hx-put="{% url 'triad:ingredient' ingredient.id %}"
+            hx-target-400="#badrequest"
+            hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
+            hx-trigger="submit">
     {% else %}
         <form class="w-full" hx-post="/ingredients" hx-target="#dynamic-content" hx-target-400="#badrequest" hx-trigger="submit">
     {% endif %}
