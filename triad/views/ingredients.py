@@ -19,12 +19,18 @@ def ingredient_form(request, ingredient_id=None):
 
     return render(request, 'ingredients/partials/_form.html', {'ingredient': ingredient, 'types': types})
 
-@require_http_methods(['GET', 'PUT'])
+@require_http_methods(['GET', 'PUT', 'DELETE'])
 def ingredient_details(request, ingredient_id):
     ingredient = Ingredient.objects.get(pk=ingredient_id)
 
     if request.method == 'GET':
         return render(request, 'ingredients/partials/_detail.html', {'ingredient': ingredient})
+    elif request.method == 'DELETE':
+        ingredient.delete()
+
+        ingredients = Ingredient.objects.all().order_by("-pk")
+        return render(request, 'ingredients/partials/_list.html', {'ingredients': ingredients})
+
     elif request.method == 'PUT':
         data = QueryDict(request.body)
 
