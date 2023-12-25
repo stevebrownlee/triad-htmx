@@ -1,11 +1,23 @@
-<h1>Ingredients</h1>
-
-<a href="{% url 'triad:ingredient_form' %}">Add Ingredient</a>
-
-<ol class="ingredients">
-  {% for ingredient in ingredients %}
-    <li class="ingredient">
-      <a id="ingredient--{{ ingredient.id }}" class="ingredient__title" href="{% url 'triad:ingredient' ingredient.id %}">{{ ingredient.name }}</a>
-    </li>
-  {% endfor %}
-</ol>
+  <table class="table table-xl mx-auto mt-12 w-full">
+    <!-- head -->
+    <thead>
+      <tr class="text-lg bg-slate-100">
+        <th>Name</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for ingredient in ingredients %}
+        <tr class="text-lg">
+          <td>
+            <a class="link link-secondary"
+              id="ingredient--{{ ingredient.id }}"
+              hx-swap="innerHTML transition:true"
+              hx-target="#dynamic-content"
+              hx-get="{% url 'triad:ingredient' ingredient.id %}">{{ ingredient.name }}</a>
+          </td>
+          <td>{{ ingredient.type.description }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>

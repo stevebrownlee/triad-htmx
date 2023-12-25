@@ -5,7 +5,7 @@ from .views import *
 app_name = "triad"
 
 urlpatterns = [
-    # path('/', home, name='home'),
+    path('/', home, name='home'),
     path('potioningredients', ingredients, name='ingredients'),
     path('ingredients', ingredient_list, name='ingredient-list'),
     path('ingredients/<int:ingredient_id>', ingredient_details, name="ingredient"),

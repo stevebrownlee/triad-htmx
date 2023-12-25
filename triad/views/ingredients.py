@@ -22,7 +22,7 @@ def ingredient_details(request, ingredient_id):
 @require_http_methods(['GET', 'POST'])
 def ingredient_list(request):
     if request.method == 'GET':
-        ingredients = Ingredient.objects.all()
+        ingredients = Ingredient.objects.all().order_by("-pk")
         return render(request, 'ingredients/partials/_list.html', {'ingredients': ingredients})
 
     elif request.method == 'POST':
@@ -31,7 +31,7 @@ def ingredient_list(request):
             potency=request.POST.get('potency'),
             type=Type.objects.get(pk=request.POST.get('type')),
         )
-        ingredients = Ingredient.objects.all()
+        ingredients = Ingredient.objects.all().order_by("-pk")
         return render(request, 'ingredients/partials/_list.html', {'ingredients': ingredients})
 
 

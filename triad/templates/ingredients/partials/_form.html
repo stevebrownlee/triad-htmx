@@ -1,23 +1,21 @@
-<div hx-ext="response-targets">
+<div hx-ext="response-targets" class="flex justify-center w-1/2 mt-12">
     {% if ingredient.id is not None %}
-        <h1>Ingredient</h1>
-        <form hx-put="{% url 'libraryapp:ingredient' ingredient.id %}" hx-target-400="#badrequest" hx-trigger="submit">
+        <form class="w-full" hx-target="#dynamic-content" hx-put="{% url 'libraryapp:ingredient' ingredient.id %}" hx-target-400="#badrequest" hx-trigger="submit">
     {% else %}
-        <h1>New Ingredient</h1>
-        <form hx-post="/ingredients" hx-target-400="#badrequest" hx-trigger="submit">
+        <form class="w-full" hx-post="/ingredients" hx-target="#dynamic-content" hx-target-400="#badrequest" hx-trigger="submit">
     {% endif %}
         {% csrf_token %}
-        <fieldset>
-            <label for="name">Name: </label>
-            <input id="name" type="text" name="name" value="{{ ingredient.name }}">
+        <fieldset class="flex items-center mb-4">
+            <label class="block w-1/4 mr-2 text-left" for="name">Name: </label>
+            <input class=" flex-1 input input-bordered rounded w-full" id="name" type="text" name="name" value="{{ ingredient.name }}">
         </fieldset>
-        <fieldset>
-            <label for="potency">Potency: </label>
-            <input id="potency" type="number" name="potency" value="{{ ingredient.potency }}">
+        <fieldset class="flex items-center mb-4">
+            <label class="block w-1/4 mr-2 text-left" for="potency">Potency: </label>
+            <input class="flex-1 input input-bordered rounded w-full" id="potency" type="number" name="potency" value="{{ ingredient.potency }}">
         </fieldset>
-        <fieldset>
-            <label for="type">Magical Type: </label>
-            <select id="type" type="text" name="type">
+        <fieldset class="flex items-center mb-4">
+            <label class="block w-1/4 mr-2 text-left" for="type">Magical Type: </label>
+            <select class="flex-1 input input-bordered rounded w-full" id="type" type="text" name="type">
                 {% for type in types %}
                 <option {% if type.id == ingredient.type_id %}selected{% endif %} value="{{ type.id }}">
                     {{ type.description }}</option>
@@ -26,9 +24,9 @@
         </fieldset>
 
         {% if ingredient.id is not None %}
-            <input type="submit" value="Update" />
+            <button class="btn btn-secondary mx-auto">Update</button>
         {% else %}
-            <input type="submit" value="Create" />
+            <button class="btn btn-secondary mx-auto">Create</button>
         {% endif %}
     </form>
 </div>
