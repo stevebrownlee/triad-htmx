@@ -18,7 +18,6 @@ def ingredient_details(request, ingredient_id):
     ingredient= Ingredient.objects.get(pk=ingredient_id)
     return render(request, 'ingredients/partials/_detail.html', {'ingredient': ingredient})
 
-
 @require_http_methods(['GET', 'POST'])
 def ingredient_list(request):
     if request.method == 'GET':
@@ -33,5 +32,3 @@ def ingredient_list(request):
         )
         ingredients = Ingredient.objects.all().order_by("-pk")
         return render(request, 'ingredients/partials/_list.html', {'ingredients': ingredients})
-
-

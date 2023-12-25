@@ -1,23 +1,23 @@
-  <table class="table table-xl mx-auto mt-12 w-full">
-    <!-- head -->
-    <thead>
-      <tr class="text-lg bg-slate-100">
-        <th>Name</th>
-        <th>Type</th>
+<table class="table table-xl mx-auto mt-12 w-full">
+  <!-- head -->
+  <thead>
+    <tr class="text-lg bg-slate-100">
+      <th>Name</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ingredient in ingredients %}
+      <tr class="text-lg">
+        <td>
+          <a class="link link-secondary"
+             id="ingredient--{{ ingredient.id }}"
+             hx-swap="innerHTML transition:true"
+             hx-target="#dynamic-content"
+             hx-get="{% url 'triad:ingredient' ingredient.id %}">{{ ingredient.name }}</a>
+        </td>
+        <td>{{ ingredient.type.description }}</td>
       </tr>
-    </thead>
-    <tbody>
-      {% for ingredient in ingredients %}
-        <tr class="text-lg">
-          <td>
-            <a class="link link-secondary"
-              id="ingredient--{{ ingredient.id }}"
-              hx-swap="innerHTML transition:true"
-              hx-target="#dynamic-content"
-              hx-get="{% url 'triad:ingredient' ingredient.id %}">{{ ingredient.name }}</a>
-          </td>
-          <td>{{ ingredient.type.description }}</td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+    {% endfor %}
+  </tbody>
+</table>
