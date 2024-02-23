@@ -1,34 +1,34 @@
 <div hx-ext="response-targets" class="flex justify-center w-1/2 mt-12">
-    {% if word.id is not None %}
+    {% if potion.id is not None %}
         <form class="w-full"
             hx-target="#dynamic-content"
-            hx-put="{% url 'triad:word' word.id %}"
+            hx-put="{% url 'triad:potion' potion.id %}"
             hx-target-400="#badrequest"
             hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
             hx-trigger="submit">
     {% else %}
-        <form class="w-full" hx-post="/words" hx-target="#dynamic-content" hx-target-400="#badrequest" hx-trigger="submit">
+        <form class="w-full" hx-post="/potions" hx-target="#dynamic-content" hx-target-400="#badrequest" hx-trigger="submit">
     {% endif %}
         {% csrf_token %}
         <fieldset class="flex items-center mb-4">
-            <label class="block w-1/4 mr-2 text-left" for="word">Word: </label>
-            <input class=" flex-1 input input-bordered rounded w-full" id="word" type="text" name="word" value="{{ word.word }}">
+            <label class="block w-1/4 mr-2 text-left" for="name">Name: </label>
+            <input class=" flex-1 input input-bordered rounded w-full" id="name" type="text" name="name" value="{{ potion.name }}">
         </fieldset>
         <fieldset class="flex items-center mb-4">
             <label class="block w-1/4 mr-2 text-left" for="potency">Potency: </label>
-            <input class="flex-1 input input-bordered rounded w-full" id="potency" type="number" name="potency" value="{{ word.potency }}">
+            <input class="flex-1 input input-bordered rounded w-full" id="potency" type="number" name="potency" value="{{ potion.potency }}">
         </fieldset>
         <fieldset class="flex items-center mb-4">
             <label class="block w-1/4 mr-2 text-left" for="type">Magical Type: </label>
             <select class="flex-1 input input-bordered rounded w-full" id="type" type="text" name="type">
                 {% for type in types %}
-                <option {% if type.id == word.type_id %}selected{% endif %} value="{{ type.id }}">
+                <option {% if type.id == potion.type_id %}selected{% endif %} value="{{ type.id }}">
                     {{ type.description }}</option>
                 {% endfor %}
             </select>
         </fieldset>
 
-        {% if word.id is not None %}
+        {% if potion.id is not None %}
             <button class="btn btn-secondary mx-auto">Update</button>
         {% else %}
             <button class="btn btn-secondary mx-auto">Create</button>

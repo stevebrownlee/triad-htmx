@@ -1,16 +1,16 @@
 <div class="flex flex-col w-1/2 mt-12">
-{% for word_type in words %}
-<h1>{{ word_type.0.type.description }}</h1>
+{% for potion_type in potions %}
+<h1>{{ potion_type.0.type.description }}</h1>
   <table class="table table-xl mx-auto">
     <tbody>
-      {% for word in word_type %}
+      {% for potion in potion_type %}
         <tr class="text-lg">
           <td class="w-4/5">
-            <a class="link link-secondary" id="word--{{ word.id }}"
+            <a class="link link-secondary" id="potion--{{ potion.id }}"
             hx-swap="innerHTML transition:true" hx-target="#dynamic-content"
-            hx-get="{% url 'triad:word' word.id %}">{{ word.word }}</a>
+            hx-get="{% url 'triad:potion' potion.id %}">{{ potion.name }}</a>
           </td>
-          <td>{{ word.potency }}</td>
+          <td>{{ potion.potency }}</td>
         </tr>
       {% endfor %}
     </tbody>

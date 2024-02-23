@@ -9,8 +9,6 @@
     <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/htmx.org/dist/ext/response-targets.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-
     <link rel="stylesheet" href="{% static 'styles/base.css' %}" />
 
     {% block css %}
@@ -20,8 +18,15 @@
 <body data-theme="emerald">
     <nav id="site-nav">
         <ol class="navList">
-            <li class="navList__route"><a class="link link-primary" href="{% url 'triad:home' %}">Home</a></li>
-            <li class="navList__route"><a class="link link-primary" href="{% url 'triad:ingredients' %}">Ingredients</a></li>
+            <li class="navList__route">
+                <a class="link link-primary" href="{% url 'triad:home' %}">Home</a>
+            </li>
+            <li class="navList__route">
+                <a class="link link-primary" href="{% url 'triad:ingredients' %}">Ingredients</a>
+            </li>
+            <li class="navList__route">
+                <a class="link link-primary" href="{% url 'triad:words' %}">Words</a>
+            </li>
         </ol>
     </nav>
 
@@ -32,6 +37,8 @@
 
     {% block scripts %}
     {% endblock %}
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
 </body>
 
 </html>

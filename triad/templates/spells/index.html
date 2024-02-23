@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <!-- Words Section Container -->
-  <div id="words-container" class="w-4/5 flex justify-center flex-col">
+  <!-- Spells Section Container -->
+  <div id="spells-container" class="w-4/5 flex justify-center flex-col">
     <!-- Navigation or Action Buttons -->
-    <div class="words-actions flex justify-center space-x-5">
+    <div class="spells-actions flex justify-center space-x-5">
       <button class="btn btn-primary"
             hx-swap="innerHTML transition:true"
-            hx-get="/words"
-            hx-target="#dynamic-content">View Words</button>
+            hx-get="/spells"
+            hx-target="#dynamic-content">View Spells</button>
       <button class="btn btn-primary"
-              hx-get="/words/form"
+              hx-get="/spells/form"
               hx-swap="innerHTML transition:true"
               hx-target="#dynamic-content">Add New Item</button>
     </div>
@@ -18,12 +18,12 @@
     <!-- Dynamic Content Area -->
     <!-- This is where the list, details, forms, etc., will be loaded -->
 
-    <div id="dynamic-content" hx-get="/words" hx-trigger="load" class="flex justify-center w-full">
+    <div id="dynamic-content" hx-get="/spells" hx-trigger="load" class="flex justify-center w-full">
       <!-- Content loaded via HTMX will appear here -->
     </div>
   </div>
 {% endblock %}
 
 {% block scripts %}
-  <!-- Any specific JavaScript needed for the words section -->
+  <!-- Any specific JavaScript needed for the spells section -->
 {% endblock %}

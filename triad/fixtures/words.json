@@ -3,7 +3,7 @@
     "model": "triad.word",
     "pk": 1,
     "fields": {
-      "word": "Flamberglore",
+      "word": "velit",
       "potency": 5,
       "type": 1
     }
@@ -12,7 +12,7 @@
     "model": "triad.word",
     "pk": 2,
     "fields": {
-      "word": "Infernoquill",
+      "word": "debitis",
       "potency": 4,
       "type": 1
     }
@@ -21,7 +21,7 @@
     "model": "triad.word",
     "pk": 3,
     "fields": {
-      "word": "Pyroflicker",
+      "word": "expedita",
       "potency": 3,
       "type": 1
     }
@@ -30,7 +30,7 @@
     "model": "triad.word",
     "pk": 4,
     "fields": {
-      "word": "Aquamirage",
+      "word": "possimus",
       "potency": 5,
       "type": 2
     }
@@ -39,7 +39,7 @@
     "model": "triad.word",
     "pk": 5,
     "fields": {
-      "word": "Ripplewhisper",
+      "word": "quia",
       "potency": 4,
       "type": 2
     }
@@ -48,7 +48,7 @@
     "model": "triad.word",
     "pk": 6,
     "fields": {
-      "word": "Auroradew",
+      "word": "id",
       "potency": 3,
       "type": 2
     }
@@ -57,7 +57,7 @@
     "model": "triad.word",
     "pk": 7,
     "fields": {
-      "word": "Terraquiver",
+      "word": "sint",
       "potency": 5,
       "type": 3
     }
@@ -66,7 +66,7 @@
     "model": "triad.word",
     "pk": 8,
     "fields": {
-      "word": "Rootsoar",
+      "word": "reprehenderit",
       "potency": 4,
       "type": 3
     }
@@ -75,7 +75,7 @@
     "model": "triad.word",
     "pk": 9,
     "fields": {
-      "word": "Petalshimmer",
+      "word": "quis",
       "potency": 3,
       "type": 3
     }
@@ -84,7 +84,7 @@
     "model": "triad.word",
     "pk": 10,
     "fields": {
-      "word": "Zephyrwisp",
+      "word": "quibusdam",
       "potency": 5,
       "type": 4
     }
@@ -93,7 +93,7 @@
     "model": "triad.word",
     "pk": 11,
     "fields": {
-      "word": "Whirlwindance",
+      "word": "explicabo",
       "potency": 4,
       "type": 4
     }
@@ -102,7 +102,7 @@
     "model": "triad.word",
     "pk": 12,
     "fields": {
-      "word": "Aeroglide",
+      "word": "voluptas",
       "potency": 3,
       "type": 4
     }
@@ -111,7 +111,7 @@
     "model": "triad.word",
     "pk": 13,
     "fields": {
-      "word": "Mysticflux",
+      "word": "sed",
       "potency": 5,
       "type": 5
     }
@@ -120,7 +120,7 @@
     "model": "triad.word",
     "pk": 14,
     "fields": {
-      "word": "Arcaneglitter",
+      "word": "fuga",
       "potency": 4,
       "type": 5
     }
@@ -129,7 +129,7 @@
     "model": "triad.word",
     "pk": 15,
     "fields": {
-      "word": "Enigmatwist",
+      "word": "aut",
       "potency": 3,
       "type": 5
     }
@@ -138,7 +138,7 @@
     "model": "triad.word",
     "pk": 16,
     "fields": {
-      "word": "Luminastra",
+      "word": "consequatur",
       "potency": 10,
       "type_id": 1
     }
@@ -147,7 +147,7 @@
     "model": "triad.word",
     "pk": 17,
     "fields": {
-      "word": "Aurorix",
+      "word": "rerum",
       "potency": 8,
       "type_id": 2
     }
@@ -156,7 +156,7 @@
     "model": "triad.word",
     "pk": 18,
     "fields": {
-      "word": "Mysticarum",
+      "word": "illum",
       "potency": 15,
       "type_id": 1
     }
@@ -165,7 +165,7 @@
     "model": "triad.word",
     "pk": 19,
     "fields": {
-      "word": "Eclipsion",
+      "word": "magni",
       "potency": 12,
       "type_id": 3
     }
@@ -174,7 +174,7 @@
     "model": "triad.word",
     "pk": 20,
     "fields": {
-      "word": "Spectraglow",
+      "word": "ipsum",
       "potency": 7,
       "type_id": 2
     }

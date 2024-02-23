@@ -1,0 +1,17 @@
+<div class="flex flex-col w-1/2 mt-12">
+  {% for artifact_type in artifacts %}
+    <h1>{{ artifact_type[0].type.description }}</h1>
+    <table class="table table-xl mx-auto">
+      <tbody>
+        {% for artifact in artifact_type %}
+          <tr class="text-lg">
+            <td class="w-4/5">
+              <a class="link link-secondary" id="artifact--{{ artifact.id }}" hx-swap="innerHTML transition:true" hx-target="#dynamic-content" hx-get="{% url 'triad:artifact' artifact.id %}">{{ artifact.name }}</a>
+            </td>
+            <td>{{ artifact.potency }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endfor %}
+</div>

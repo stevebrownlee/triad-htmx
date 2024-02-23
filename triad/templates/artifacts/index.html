@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <!-- Artifacts Section Container -->
+  <div id="artifacts-container" class="w-4/5 flex justify-center flex-col">
+    <!-- Navigation or Action Buttons -->
+    <div class="artifacts-actions flex justify-center space-x-5">
+      <button class="btn btn-primary"
+            hx-swap="innerHTML transition:true"
+            hx-get="/artifacts"
+            hx-target="#dynamic-content">View Artifact</button>
+      <button class="btn btn-primary"
+              hx-get="/artifacts/form"
+              hx-swap="innerHTML transition:true"
+              hx-target="#dynamic-content">New Artifact</button>
+    </div>
+
+    <!-- Dynamic Content Area -->
+    <!-- This is where the list, details, forms, etc., will be loaded -->
+
+    <div id="dynamic-content" hx-get="/artifacts" hx-trigger="load" class="flex justify-center w-full">
+      <!-- Content loaded via HTMX will appear here -->
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <!-- Any specific JavaScript needed for the artifacts section -->
+{% endblock %}

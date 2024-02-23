@@ -1,6 +1,5 @@
 from django.http import QueryDict
 from django.shortcuts import render
-from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_http_methods
 from triad.models import Ingredient, Type
 

@@ -3,8 +3,12 @@
 {% block content %}
   <div id="home-container" class="w-4/5 flex justify-center flex-col">
     Welcome home
-
   </div>
+
+  <button class="btn btn-primary text-2xl"
+          hx-get="/ingredients/form"
+          hx-swap="innerHTML transition:true"
+          hx-target="#dynamic-content">Add New Item</button>
 {% endblock %}
 
 {% block scripts %}

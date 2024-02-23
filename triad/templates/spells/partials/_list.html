@@ -1,16 +1,16 @@
 <div class="flex flex-col w-1/2 mt-12">
-{% for word_type in words %}
-<h1>{{ word_type.0.type.description }}</h1>
+{% for spell_type in spells %}
+<h1>{{ spell_type.0.type.description }}</h1>
   <table class="table table-xl mx-auto">
     <tbody>
-      {% for word in word_type %}
+      {% for spell in spell_type %}
         <tr class="text-lg">
           <td class="w-4/5">
-            <a class="link link-secondary" id="word--{{ word.id }}"
+            <a class="link link-secondary" id="spell--{{ spell.id }}"
             hx-swap="innerHTML transition:true" hx-target="#dynamic-content"
-            hx-get="{% url 'triad:word' word.id %}">{{ word.word }}</a>
+            hx-get="{% url 'triad:spell' spell.id %}">{{ spell.name }}</a>
           </td>
-          <td>{{ word.potency }}</td>
+          <td>{{ spell.potency }}</td>
         </tr>
       {% endfor %}
     </tbody>
