@@ -1,9 +1,19 @@
 from django.http import QueryDict
-from django.urls import reverse
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_http_methods
 from triad.models import Ingredient, Type
+
+def list_all_ingredients(request):
+    from itertools import groupby
+
+    ingredients = Ingredient.objects.all().order_by("type", "-potency")
+
+    grouped_ingredients = []
+    for key, group in groupby(ingredients, lambda x: x.type.id):
+        grouped_ingredients.append(list(group))
+
+    return render(request, 'ingredients/partials/_list.html', {'ingredients': grouped_ingredients})
 
 @require_http_methods(['GET'])
 def ingredients(request):
@@ -25,11 +35,10 @@ def ingredient_details(request, ingredient_id):
 
     if request.method == 'GET':
         return render(request, 'ingredients/partials/_detail.html', {'ingredient': ingredient})
+
     elif request.method == 'DELETE':
         ingredient.delete()
-
-        ingredients = Ingredient.objects.all().order_by("-pk")
-        return render(request, 'ingredients/partials/_list.html', {'ingredients': ingredients})
+        return list_all_ingredients(request)
 
     elif request.method == 'PUT':
         data = QueryDict(request.body)
@@ -44,8 +53,7 @@ def ingredient_details(request, ingredient_id):
 @require_http_methods(['GET', 'POST'])
 def ingredient_list(request):
     if request.method == 'GET':
-        ingredients = Ingredient.objects.all().order_by("-pk")
-        return render(request, 'ingredients/partials/_list.html', {'ingredients': ingredients})
+        return list_all_ingredients(request)
 
     elif request.method == 'POST':
         Ingredient.objects.create(
@@ -53,5 +61,4 @@ def ingredient_list(request):
             potency=request.POST.get('potency'),
             type=Type.objects.get(pk=request.POST.get('type')),
         )
-        ingredients = Ingredient.objects.all().order_by("-pk")
-        return render(request, 'ingredients/partials/_list.html', {'ingredients': ingredients})
+        return list_all_ingredients(request)

@@ -1,0 +1,37 @@
+<div hx-ext="response-targets" class="flex justify-center w-1/2 mt-12">
+    {% if ingredient.id is not None %}
+        <form class="w-full"
+            hx-target="#dynamic-content"
+            hx-put="{% url 'triad:ingredient' ingredient.id %}"
+            hx-target-400="#badrequest"
+            hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
+            hx-trigger="submit">
+    {% else %}
+        <form class="w-full" hx-post="/ingredients" hx-target="#dynamic-content" hx-target-400="#badrequest" hx-trigger="submit">
+    {% endif %}
+        {% csrf_token %}
+        <fieldset class="flex items-center mb-4">
+            <label class="block w-1/4 mr-2 text-left" for="name">Name: </label>
+            <input class=" flex-1 input input-bordered rounded w-full" id="name" type="text" name="name" value="{{ ingredient.name }}">
+        </fieldset>
+        <fieldset class="flex items-center mb-4">
+            <label class="block w-1/4 mr-2 text-left" for="potency">Potency: </label>
+            <input class="flex-1 input input-bordered rounded w-full" id="potency" type="number" name="potency" value="{{ ingredient.potency }}">
+        </fieldset>
+        <fieldset class="flex items-center mb-4">
+            <label class="block w-1/4 mr-2 text-left" for="type">Magical Type: </label>
+            <select class="flex-1 input input-bordered rounded w-full" id="type" type="text" name="type">
+                {% for type in types %}
+                <option {% if type.id == ingredient.type_id %}selected{% endif %} value="{{ type.id }}">
+                    {{ type.description }}</option>
+                {% endfor %}
+            </select>
+        </fieldset>
+
+        {% if ingredient.id is not None %}
+            <button class="btn btn-secondary mx-auto">Update</button>
+        {% else %}
+            <button class="btn btn-secondary mx-auto">Create</button>
+        {% endif %}
+    </form>
+</div>
